@@ -23272,6 +23272,7 @@ Cyrodiil Rebuild.esp
   IF CHECKSUM("Cyrodiil Rebuild.esp", 69163714) WARN: You are using the replacement esp provided in Cyrodiil Rebuild Redux. Please refer to it's mod page for further information: "http://www.nexusmods.com/oblivion/mods/46892/?"
 Cyrodiil Rebuild II.esp
   TAG: {{BASH: Actors.ACBS, Actors.AIPackages, Invent, Relations}}
+CR_Redux-AddOn_Castle_Chorrol.esp
   IF FILE("ImpeREAL Empire - Unique Castles - All The Castles - Merged.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
   IF FILE("ImpeREAL Empire - Unique Castles - Chorrol.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
 CRpatchForXULlostCoast.esp
@@ -23288,6 +23289,7 @@ CRpatchForBCanvil.esp
 CRpatchForBCcheydinhal.esp
 CRpatchForBCleyawiin.esp
 CRpatchForBSandULskingrad.esp
+CR_Redux-CUO_Bruma.esp
   IF FILE("Better Cities Full.esp") INC: This file is not compatible with Better Cities.
   IF FILE("Better Cities BRUMA.esp") INC: This file is not compatible with Better Cities Bruma.
 CR_Redux-CUO_Chorrol.esp
