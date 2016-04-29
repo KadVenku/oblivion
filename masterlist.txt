@@ -23306,12 +23306,12 @@ Cyrodiil Rebuild.esp
   IF FILE("Knights.esp") WARN: If you are using Knights of the Nine, you need to use the KOTN-CyrodiilRebuild Patch as well.
 Cyrodiil Rebuild II.esp
   TAG: {{BASH: Actors.ACBS, Actors.AIPackages, Invent, Relations}}
-CR_Redux-AddOn_Castle_Chorrol.esp
-  IF FILE("ImpeREAL Empire - Unique Castles - All The Castles - Merged.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
-  IF FILE("ImpeREAL Empire - Unique Castles - Chorrol.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
 CR_Redux-Anvil.esp
   SAY: Optional Add-On for Cyrodiil Rebuild Redux
   INC: Better Cities/Better Cities - Anvil
+CR_Redux-AddOn_Castle_Chorrol.esp
+  IF FILE("ImpeREAL Empire - Unique Castles - All The Castles - Merged.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
+  IF FILE("ImpeREAL Empire - Unique Castles - Chorrol.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
 CRpatchForXULlostCoast.esp
 CRpatchForXULbravilBarrowfields.esp
 CRpatchForXULancientRedwoods.esp
