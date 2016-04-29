@@ -23300,8 +23300,8 @@ Cyrodiil Rebuild.esp
   INC: Extended Cyrodiil - Apfelwacht extended
   IFNOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) INC: *Better Cities CHORROL.esp
   IF CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) INC: Better Cities
-  IFNOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && FILE("xulSkingradOutskirts.esp") WARN: Move xulSkingradOutskirts.esp once after this esp
-  IFNOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && FILE("Better Cities SKINGRAD.esp") WARN: Move Better Cities SKINGRAD.esp once after this esp
+  IFNOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && IF FILE("xulSkingradOutskirts.esp") WARN: Move xulSkingradOutskirts.esp once after this esp
+  IFNOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && IF FILE("Better Cities SKINGRAD.esp") WARN: Move Better Cities SKINGRAD.esp once after this esp
   IF CHECKSUM("Cyrodiil Rebuild.esp", A3178EEA) DIRTY: 128 ITM, 257 UDR records. Needs TES4Edit cleaning: "http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide"
   IF FILE("Knights.esp") WARN: If you are using Knights of the Nine, you need to use the KOTN-CyrodiilRebuild Patch as well.
 Cyrodiil Rebuild II.esp
