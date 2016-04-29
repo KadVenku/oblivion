@@ -23291,22 +23291,27 @@ TreeHomeIntLight-ChorrolHinterland patch.esp
 Cyrodiil Rebuild.esp
   TAG: {{BASH: Actors.ACBS, Actors.AIPackages, Invent, Relations}}
   IF CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) SAY: You are using the replacement esp provided in Cyrodiil Rebuild Redux. Please refer to it's mod page for further information: "http://www.nexusmods.com/oblivion/mods/46892/?"
-  ELSE INC: AnvilBayExpansion.esp
-       INC: Bravil Docks.esp INC: ImpeREAL Empire - Unique Castles - Bruma.esp
-	   INC: mrSiikas_ImperialCathedral.esp
-	   INC: xulChorrolHinterland.esp Included in Cyrodiil Rebuild.esp
-	   INC: Extended Cyrodiil - Apfelwacht extended
-	   INC: *Better Cities CHORROL.esp
-	   SAY: For Better Cities and Unique Landscapes use esp included in Cyrodiil Rebuild archive.
-       IF FILE("xulSkingradOutskirts.esp") WARN: Move xulSkingradOutskirts.esp once after this esp IF FILE("Better Cities SKINGRAD.esp")
-       IF FILE("xulSkingradOutskirts.esp") WARN: Move Better Cities SKINGRAD.esp once after this esp
-	   IF CHECKSUM("Cyrodiil Rebuild.esp", A3178EEA) DIRTY: 128 ITM, 257 UDR records. Needs TES4Edit cleaning: "http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide"
+  ELSE SAY: For Better Cities and Unique Landscapes use esp included in Cyrodiil Rebuild archive.
+  INC: AnvilBayExpansion.esp
+  INC: Bravil Docks.esp
+  INC: ImpeREAL Empire - Unique Castles - Bruma.esp
+  INC: mrSiikas_ImperialCathedral.esp
+  INC: xulChorrolHinterland.esp Included in Cyrodiil Rebuild.esp
+  INC: Extended Cyrodiil - Apfelwacht extended
+  IF NOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) INC: *Better Cities CHORROL.esp
+  IF CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) INC: Better Cities
+  IF NOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && FILE("xulSkingradOutskirts.esp") WARN: Move xulSkingradOutskirts.esp once after this esp
+  IF NOT CHECKSUM("Cyrodiil Rebuild.esp", DA4D6BD) && FILE("Better Cities SKINGRAD.esp") WARN: Move Better Cities SKINGRAD.esp once after this esp
+  IF CHECKSUM("Cyrodiil Rebuild.esp", A3178EEA) DIRTY: 128 ITM, 257 UDR records. Needs TES4Edit cleaning: "http://cs.elderscrolls.com/index.php?title=TES4Edit_Cleaning_Guide"
   IF FILE("Knights.esp") WARN: If you are using Knights of the Nine, you need to use the KOTN-CyrodiilRebuild Patch as well.
 Cyrodiil Rebuild II.esp
   TAG: {{BASH: Actors.ACBS, Actors.AIPackages, Invent, Relations}}
 CR_Redux-AddOn_Castle_Chorrol.esp
   IF FILE("ImpeREAL Empire - Unique Castles - All The Castles - Merged.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
   IF FILE("ImpeREAL Empire - Unique Castles - Chorrol.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
+CR_Redux-Anvil.esp
+  SAY: Optional Add-On for Cyrodiil Rebuild Redux
+  INC: Better Cities/Better Cities - Anvil
 CRpatchForXULlostCoast.esp
 CRpatchForXULbravilBarrowfields.esp
 CRpatchForXULancientRedwoods.esp
