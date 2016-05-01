@@ -23309,6 +23309,9 @@ Cyrodiil Rebuild II.esp
 CR_Redux-Anvil.esp
   SAY: Optional Add-On for Cyrodiil Rebuild Redux
   INC: Better Cities/Better Cities - Anvil
+CR_Redux-Leyawiin.esp
+  SAY: Optional Add-On for Cyrodiil Rebuild Redux
+  INC: Better Cities/Better Cities - Leyawiin
 CR_Redux-AddOn_Castle_Chorrol.esp
   IF FILE("ImpeREAL Empire - Unique Castles - All The Castles - Merged.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
   IF FILE("ImpeREAL Empire - Unique Castles - Chorrol.esp") INC: This file is not compatible with ImpeREAL Empire - Unique Castles.
